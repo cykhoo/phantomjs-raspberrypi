@@ -30,21 +30,21 @@ $ ./phantomjs --version
 The PhantomJS binary was built using the official method described in the (official documentation)[http://phantomjs.org/build.html].
 
 ```
-sudo apt-get install build-essential g++ flex bison gperf ruby perl \
+$ sudo apt-get install build-essential g++ flex bison gperf ruby perl \
   libsqlite3-dev libfontconfig1-dev libicu-dev libfreetype6 libssl-dev \
   libpng-dev libjpeg-dev python libx11-dev libxext-dev
 
-sudo apt-get install ttf-mscorefonts-installer
+$ sudo apt-get install ttf-mscorefonts-installer
 ```
 ```
-git clone git://github.com/ariya/phantomjs.git
-cd phantomjs
-git checkout 2.1.1
-git submodule init
-git submodule update
+$ git clone git://github.com/ariya/phantomjs.git
+$ cd phantomjs
+$ git checkout 2.1.1
+$ git submodule init
+$ git submodule update
 ```
 ```
-python build.py
+$ python build.py --jobs 2
 ```
 
 Note the caution from the docs: "...building it from source takes a long time...Estimated build time for a 4-core system is 30 minutes."
